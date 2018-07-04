@@ -1,5 +1,9 @@
-/* This program prints a histogram of characters of characters entered. */
-
+/*
+ * Exercise 1-14
+ *
+ * Write a program to print a histogram of the frequencies of different
+ * characters in its input.
+ */
 #include <stdio.h>
 
 int main()
