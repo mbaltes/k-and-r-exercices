@@ -11,7 +11,7 @@
 
 int getline_me(char line[], int maxline);
 void copy(char to[], char from[]);
-
+void print_len_and_begin(char l[], int len);
 
 int main()
 {
@@ -26,11 +26,23 @@ int main()
 			max = len;
 			copy(longest, line);
 		}
+		print_len_and_begin(line, len);
 	}
 	if (max > 0)
 		printf("%s", longest);
 
 	return 0;
+}
+
+
+void print_len_and_begin(char l[], int len)
+{
+	int max = 80;
+
+	if (len > max)
+		printf("%d %.*s...\n", len, max-3, l);
+	else
+		printf("%d %s", len, l);
 }
 
 
